@@ -3,8 +3,8 @@ import json, urllib.request
 
 class Parser():
     def __init__(self):
-        valuta_NBU = []
-        valuta_PrivatBank = []
+        self.valuta_NBU = []
+        self.valuta_PrivatBank = []
 
     def Get_Data_NBU(self):
         NBU = urllib.request.urlopen("https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json").read()
