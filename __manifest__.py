@@ -27,6 +27,7 @@
     'demo': [
         'demo/cron.xml',
     ],
+    'images': ['static/description/icon.png'],
     'installable': True,
     'auto_install': False
 
