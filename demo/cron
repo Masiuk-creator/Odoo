@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+
+<odoo>
+
+    <record id="ir_cron_currency_rates_update_every_minutes" model="ir.cron">
+        <field name="name">Exchange Rates Update momently</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
+        <field name="state">code</field>
+        <!--<field name="nextcall">2020-01-01 00:**:00</field>-->
+        <field name="doall" eval="False"/>
+        <!--<field name="model_id" ref="currency_rate_update.model_res_currency_rate_provider"/>-->
+       <!-- <field name="code">model._scheduled_update()</field>-->
+    </record>
+     <record id="ir_cron_currency_rates_update_every_hours" model="ir.cron">
+        <field name="name">Exchange Rates Update hourly</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">hours</field>
+        <field name="numbercall">-1</field>
+        <field name="state">code</field>
+        <!--<field name="nextcall">2020-01-01 01:00:00</field>-->
+        <field name="doall" eval="False"/>
+        <!--<field name="model_id" ref="currency_rate_update.model_res_currency_rate_provider"/>-->
+        <!--<field name="code">model._scheduled_update()</field>-->
+    </record>
+     <record id="ir_cron_currency_rates_update_every_day" model="ir.cron">
+        <field name="name">Exchange Rates Update daily</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
+        <field name="state">code</field>
+        <!--<field name="nextcall">2020-01-02 00:00:00</field>-->
+        <field name="doall" eval="False"/>
+        <!--<field name="model_id" ref="currency_rate_update.model_res_currency_rate_provider"/>-->
+        <!--<field name="code">model._scheduled_update()</field>-->
+    </record>
+     <record id="ir_cron_currency_rates_update_every_weeks" model="ir.cron">
+        <field name="name">Exchange Rates Update weekly</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">weeks</field>
+        <field name="numbercall">-1</field>
+        <field name="state">code</field>
+        <!--<field name="nextcall">2020-01-08 00:01:00</field>-->
+        <field name="doall" eval="False"/>
+        <!--<field name="model_id" ref="currency_rate_update.model_res_currency_rate_provider"/>-->
+        <!--<field name="code">model._scheduled_update()</field>-->
+    </record>
+     <record id="ir_cron_currency_rates_update_every_month" model="ir.cron">
+        <field name="name">Exchange Rates Update monthly</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">months</field>
+        <field name="numbercall">-1</field>
+        <field name="state">code</field>
+        <!--<field name="nextcall">2020-02-01 00:01:00</field>-->
+        <field name="doall" eval="False"/>
+        <!--<field name="model_id" ref="currency_rate_update.model_res_currency_rate_provider"/>-->
+        <!--<field name="code">model._scheduled_update()</field>-->
+    </record>
+</odoo>
