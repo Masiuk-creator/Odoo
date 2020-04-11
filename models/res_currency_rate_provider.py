@@ -16,7 +16,7 @@ class Parser():
         output2 = json.loads(PrivatBank)
         return output2
 
-    def foreach_valuta_PrivatBank():
+    def foreach_valuta_PrivatBank(self):
         for valuta in Get_Data_PrivatBank():
             if valuta['ccy'] == 'EUR':
                 valuta_NBU['eur_privatbank'] = valuta['buy']
@@ -24,9 +24,9 @@ class Parser():
                 valuta_NBU['usd_privatbank'] = valuta['buy']
             if valuta['ccy'] == 'RUR':
                 valuta_NBU['rur_privatbank'] = valuta['buy']
-        print(valuta_PrivatBank[])
+        print(valuta_PrivatBank)
 
-    def foreach_valute_NBU():
+    def foreach_valute_NBU(self):
         for valuta in Get_Data_NBU():
             if valuta['cc'] == 'EUR':
                 valuta_NBU['eur_nbu'] = valuta[rate]
@@ -34,4 +34,4 @@ class Parser():
                 valuta_NBU['usd_nbu'] = valuta[rate]
             if valuta['cc'] == 'RUB':
                 valuta_NBU['rub_nbu'] = valuta[rate]
-        print(valuta_NBU[])
+        print(valuta_NBU)
