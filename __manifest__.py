@@ -20,7 +20,9 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
-
+    'data': [
+        'views/currency.xml',
+    ],
     # always loaded
 
     # only loaded in demonstration mode

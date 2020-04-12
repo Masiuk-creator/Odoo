@@ -2,7 +2,7 @@
 
 <odoo>
 
-    <record id="ir_cron_currency_rates_update_every_minutes" model="ir.cron">
+    <record id="ir_cron_currency_rates_update_every_minute" model="ir.cron">
         <field name="name">Exchange Rates Update momently</field>
         <field name="interval_number">1</field>
         <field name="interval_type">minutes</field>
@@ -13,7 +13,7 @@
         <!--<field name="model_id" ref="currency_rate_update.model_res_currency_rate_provider"/>-->
        <!-- <field name="code">model._scheduled_update()</field>-->
     </record>
-     <record id="ir_cron_currency_rates_update_every_hours" model="ir.cron">
+     <record id="ir_cron_currency_rates_update_every_hour" model="ir.cron">
         <field name="name">Exchange Rates Update hourly</field>
         <field name="interval_number">1</field>
         <field name="interval_type">hours</field>
@@ -35,7 +35,7 @@
         <!--<field name="model_id" ref="currency_rate_update.model_res_currency_rate_provider"/>-->
         <!--<field name="code">model._scheduled_update()</field>-->
     </record>
-     <record id="ir_cron_currency_rates_update_every_weeks" model="ir.cron">
+     <record id="ir_cron_currency_rates_update_every_week" model="ir.cron">
         <field name="name">Exchange Rates Update weekly</field>
         <field name="interval_number">1</field>
         <field name="interval_type">weeks</field>

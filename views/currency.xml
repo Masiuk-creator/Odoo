@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<openerp>
+    <data>
+        <record model="ir.ui.view" id="format_currency_form">
+            <field name="name">format.currency.form</field>
+            <field name="model">res.currency</field>
+            <field name="inherit_id" ref="base.view_currency_form"/>
+            <field name="arch" type="xml">
+                <field name="name" position="replace"/>
+                <group col="4" position="before">
+                    <h1>
+                        <span class="oe_format_form_title_prefix">Currency</span> <field name="name"/>
+                    </h1>
+                </group>
+                <field name="rate" position="replace">
+                    <field name="uah_currency_rate"/>
+                </field>
+                <group col="4" position="after">
+                    <notebook>
+                        <page string="Currencies">
+                            <group>
+
+                            </group>
+                        </page>
+                    </notebook>
+                </group>
+            </field>
+        </record>
+    </data>
+</openerp>
