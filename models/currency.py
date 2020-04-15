@@ -10,7 +10,7 @@ from odoo.tools.translate import _
 from ..services.update_service_UAH_NBU import UAH_NBU_getter
 
 _logger = logging.getLogger(__name__)
-CURRENCY_DOMAIN = [('name', 'in', ['RUB', 'USD', 'EUR'])]
+CURRENCY_DOMAIN = [('name', 'in', 'UAH')]
 
 
 class Currency(models.Model):
@@ -57,25 +57,25 @@ class Currency(models.Model):
     def uah_id(self):
         return self.env.ref('base.UAH')
 
-    @property
-    def eur_id(self):
-        return self.env.ref('base.EUR')
-
-    @property
-    def usd_id(self):
-        return self.env.ref('base.USD')
+    # @property
+    # def eur_id(self):
+    #     return self.env.ref('base.EUR')
+    #
+    # @property
+    # def usd_id(self):
+    #     return self.env.ref('base.USD')
 
     @api.v8
     def compute_uah(self, from_amount, round=True):
         return self.compute(from_amount, self.uah_id, round)
 
-    @api.v8
-    def compute_eur(self, from_amount, round=True):
-        return self.compute(from_amount, self.eur_id, round)
-
-    @api.v8
-    def compute_usd(self, from_amount, round=True):
-        return self.compute(from_amount, self.usd_id, round)
+    # @api.v8
+    # def compute_eur(self, from_amount, round=True):
+    #     return self.compute(from_amount, self.eur_id, round)
+    #
+    # @api.v8
+    # def compute_usd(self, from_amount, round=True):
+    #     return self.compute(from_amount, self.usd_id, round)
 
     @api.multi
     def compute_uah_currency(self):

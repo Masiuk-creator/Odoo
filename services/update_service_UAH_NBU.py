@@ -19,7 +19,7 @@ class UAH_NBU_getter(CurrencyGetterInterface):
         "UZS", "TWD", "TMT", "GHS", "RSD", "TJS", "GEL", "BRL"]
 
     def get_updated_currency(self, currency_array, main_currency, date_req=None):
-        """implementation of abstract method of Currency_getter_interface"""
+
 
         params = {}
         if date_req:
